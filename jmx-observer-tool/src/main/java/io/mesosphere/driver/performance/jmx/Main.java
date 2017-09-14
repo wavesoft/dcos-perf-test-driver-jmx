@@ -90,7 +90,7 @@ public class Main {
     public static void main(String[] arguments) {
 
         // Pointless ussage to hint
-        BsdAttachProvider p = null;
+        BsdAttachProvider p = new BsdAttachProvider();
 
         // Validate argument count
         if (arguments.length < 3) {
