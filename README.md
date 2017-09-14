@@ -26,18 +26,20 @@ For example:
 # Attach on running process
 ~$ java -jar dcos-perf-test-driver.jar \
     pid 32549 \
-    "java.lang:type=Threading::ThreadCount"
-[92]
-[91]
-[92]
-[91]
+    "java.lang:type=Threading::ThreadCount" \
+    "java.lang:type=Memory::HeapMemoryUsage"
+
+[93,{"init":268435456,"committed":522715136,"max":3817865216,"used":306891032}]
+[93,{"init":268435456,"committed":522715136,"max":3817865216,"used":307200552}]
+[93,{"init":268435456,"committed":522715136,"max":3817865216,"used":307267104}]
 
 # Connect on an oppened JMX port
 ~$ java -jar dcos-perf-test-driver.jar \
     127.0.0.1 9010 \
-    "java.lang:type=Threading::ThreadCount"
-[92]
-[91]
-[92]
-[91]
-```
+    "java.lang:type=Threading::ThreadCount" \
+    "java.lang:type=Memory::HeapMemoryUsage"
+
+[93,{"init":268435456,"committed":511705088,"max":3817865216,"used":75617648}]
+[93,{"init":268435456,"committed":511705088,"max":3817865216,"used":75694088}]
+[93,{"init":268435456,"committed":511705088,"max":3817865216,"used":75731232}]
+[93,{"init":268435456,"committed":511705088,"max":3817865216,"used":75736848}]```

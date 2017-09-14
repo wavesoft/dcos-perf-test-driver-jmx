@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/jmx-observer-tool/jmx.iml" filepath="$PROJECT_DIR$/jmx-observer-tool/jmx.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jmx-observer-tool/dcos-perf-test-driver-jmx.iml" filepath="$PROJECT_DIR$/jmx-observer-tool/dcos-perf-test-driver-jmx.iml" />
     </modules>
   </component>
 </project>
