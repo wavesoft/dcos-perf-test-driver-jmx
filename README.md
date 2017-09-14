@@ -17,6 +17,9 @@ The command-line have the following syntax:
 or   pid  [pid]  [interval in ms] "[MBean]::[Attrib]" ...
 ```
 
+Every time some of the attributes change, the tool will echo a line containing 
+a JSON array with the values of your bean attributes.
+
 For example:
 
 ```sh
